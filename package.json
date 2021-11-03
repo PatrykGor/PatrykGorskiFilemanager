@@ -4,4 +4,7 @@
     "express-handlebars": "^5.3.4",
     "formidable": "^2.0.1"
   }
+  "scripts": {
+      "start": "node ./serwer02.js"
+  }
 }
