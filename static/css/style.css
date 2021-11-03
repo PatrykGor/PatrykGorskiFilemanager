@@ -3,8 +3,33 @@ body {
     height: 100vh;
 }
 
+table {
+    text-align: center;
+    width: 100%;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: skyblue;
+    color: white;
+}
+
+th {
+    padding: 7px;
+}
+
+td {
+    padding: 10px;
+    color: blue;
+}
+
+td > a {
+    color: gray;
+}
+
 #container {
     display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas:
     "header header header header header"
     "options content content content content"
@@ -41,10 +66,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background-color: lightgray;
+    color: gray;
+}
+
+#options > a {
     color: gray;
 }
 
 #content {
     grid-area: content;
+}
+
+.label {
+    color: blue;
+    text-decoration: underline;
 }
