@@ -1,0 +1,30 @@
+<table>
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>obraz</td>
+            <td>name</td>
+            <td>size</td>
+            <td>type</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{id}}</td>
+            <td>
+                <img src="{{getImage type}}">
+            </td>
+            <td>{{name}}</td>
+            <td>{{size}}</td>
+            <td>{{type}}</td>
+            <td><a href="/delete?id={{id}}">DELETE</a></td>
+            <td><a href="/info?id={{id}}">INFO</a></td>
+            <td><a href="/download?id={{id}}">DOWNLOAD</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

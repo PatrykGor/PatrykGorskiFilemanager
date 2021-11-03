@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content"
+    "options content content content content";
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    background-color: purple;
+    grid-area: header;
+}
+
+#header > a {
+    color: white;
+    font-weight: bold;
+}
+
+#options {
+    grid-area: options;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    color: gray;
+}
+
+#content {
+    grid-area: content;
+}
