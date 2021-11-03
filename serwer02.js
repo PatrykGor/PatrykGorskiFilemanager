@@ -4,7 +4,7 @@ var express = require("express");
 var hbs = require('express-handlebars');
 var app = express();
 var formidable = require('formidable');
-const PORT = 3000;
+const PORT = process.env.PORT || 80;
 
 let filesAmount = 0;
 let uploadedFiles = [];
